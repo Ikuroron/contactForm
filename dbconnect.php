@@ -20,7 +20,7 @@ $dsn = "mysql:host=${host};dbname=${dbname};charaset=${charaset}";
 try {
   // 接続実行
   $dbh = new PDO($dsn, $user, $password, $options);
-  echo '接続成功';
+  // echo '接続成功';
 } catch (\PDOException $e) {
   // 接続に失敗した場合
   var_dump($e->getMessage());

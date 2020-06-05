@@ -12,7 +12,7 @@ $email = $_POST['email'];
 $content = $_POST['content'];
 
 // 実行するSQL文の作成
-$sql = 'INSERT INTO serveys(name, email, content, created_at) VALUES(:name, :email, :content, now())';
+$sql = 'INSERT INTO surveys(name, email, content, created_at) VALUES(:name, :email, :content, now())';
 
 // SQL文の実行準備
 $stmt = $dbh->prepare($sql);
